@@ -1,6 +1,6 @@
 {
   "name": "@generative-music/sample-index-transformer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transforms sample file indices",
   "main": "dist/cjs.js",
   "module": "src/transform.js",
