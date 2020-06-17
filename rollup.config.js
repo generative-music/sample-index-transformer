@@ -1,7 +1,7 @@
 'use strict';
 
 const config = {
-  input: './src/make-transform',
+  input: './src/transform.js',
   output: {
     file: './dist/cjs.js',
     format: 'cjs',
