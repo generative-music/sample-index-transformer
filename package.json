@@ -1,0 +1,38 @@
+{
+  "name": "@generative-music/sample-index-transformer",
+  "version": "0.0.0",
+  "description": "Transforms sample file indices",
+  "main": "dist/cjs.js",
+  "module": "src/make-transform.js",
+  "scripts": {
+    "test": "mocha src --recursive --require esm",
+    "test:watch": "npm run test -- --watch",
+    "build": "rollup --config",
+    "lint": "eslint src",
+    "preversion": "npm run lint && npm test",
+    "postversion": "git push && git push --tags"
+  },
+  "files": [
+    "dist",
+    "src/**/!(*.spec).js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/generative-music/sample-index-transformer.git"
+  },
+  "author": "Alex Bainter <alex@alexbainter.com> (https://alexbainter.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/generative-music/sample-index-transformer/issues"
+  },
+  "homepage": "https://github.com/generative-music/sample-index-transformer#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^7.2.0",
+    "eslint-config-metalex9": "^0.4.0",
+    "esm": "^3.2.25",
+    "mocha": "^8.0.1",
+    "prettier": "^2.0.5",
+    "rollup": "^2.16.1"
+  }
+}
