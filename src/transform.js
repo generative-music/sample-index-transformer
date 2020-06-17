@@ -3,7 +3,7 @@ import applyTransformation from './apply-transformation';
 const transform = (
   sampleIndex = {},
   sampleNames = [],
-  resolveDependencyValue = (value) => Promise.resolve(value)
+  transformation = (value) => Promise.resolve(value)
 ) => {
   const dependencyNameSet = new Set(sampleNames);
   const subIndex = Object.keys(sampleIndex)
@@ -12,7 +12,7 @@ const transform = (
       newIndex[dependencyName] = sampleIndex[dependencyName];
       return newIndex;
     }, {});
-  return applyTransformation(subIndex, resolveDependencyValue);
+  return applyTransformation(subIndex, transformation);
 };
 
 export default transform;

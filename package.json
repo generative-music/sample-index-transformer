@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Transforms sample file indices",
   "main": "dist/cjs.js",
-  "module": "src/make-transform.js",
+  "module": "src/transform.js",
   "scripts": {
     "test": "mocha src --recursive --require esm",
     "test:watch": "npm run test -- --watch",
