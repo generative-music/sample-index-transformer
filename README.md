@@ -1,4 +1,4 @@
-# sample-index-transformer
+# @generative-music/sample-index-transformer
 
 Transforms sample file indices.
 
