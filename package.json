@@ -9,7 +9,7 @@
     "test:watch": "npm run test -- --watch",
     "build": "rollup --config",
     "lint": "eslint src",
-    "preversion": "npm run lint && npm test",
+    "preversion": "npm run lint && npm test && npm run build",
     "postversion": "git push && git push --tags"
   },
   "files": [
